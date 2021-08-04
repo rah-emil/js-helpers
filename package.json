@@ -1,0 +1,22 @@
+{
+  "name": "js-helpers",
+  "version": "0.0.1",
+  "description": "js-helpers for quick development",
+  "main": "js-helpers.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rah-emil/js-helpers"
+  },
+  "keywords": [
+    "JavaScript",
+    "JS",
+    "helpers"
+  ],
+  "author": "Rah Emil <013131@mail.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rah-emil/js-helpers/issues"
+  },
+  "homepage": "https://github.com/rah-emil/js-helpers#readme"
+}

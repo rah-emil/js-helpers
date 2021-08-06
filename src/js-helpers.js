@@ -1,5 +1,4 @@
-console.log('Hello (1) from jsHelpers')
+import { multiply, toPrice } from './modules/math'
 
-import { multiply } from './modules/math'
-
-export default multiply;
+Math.multiply = multiply
+Number.prototype.toPrice = toPrice

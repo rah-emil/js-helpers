@@ -1,12 +1,24 @@
+/**
+ * Percentage difference between numbers X and Y.
+ * For example, income for the current and last month.
+ * @param y
+ * @returns {number}
+ */
+export const percentageDifference = function(y){
+	let x = this
 
-
-export const multiply = (x, y) => {
-	return x * y
+	if(y === 0) return ((y - x) / x) * 100
+	else return ((x - y) / y) * 100
 }
 
-export const toPrice = function(str) {
-	return this.toLocaleString(undefined, {
-		style: "currency",
-		currency: "RUB"
-	}) + str
+
+/**
+ * Subtraction from the number of percentages.
+ * For example, displaying a discounted price.
+ * @param percentage
+ * @returns {number}
+ */
+export const minusPercentage = function(percentage){
+	let price = this
+	return price - (price * (percentage/100))
 }

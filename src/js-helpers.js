@@ -1,4 +1,14 @@
-import { multiply, toPrice } from './modules/math'
+import {
+    percentageDifference,
+    minusPercentage,
+} from './modules/math'
 
-Math.multiply = multiply
-Number.prototype.toPrice = toPrice
+import {
+    simplifyNumber,
+} from './modules/visual'
+
+Number.prototype.percentageDifference = percentageDifference
+Number.prototype.minusPercentage = minusPercentage
+Number.prototype.simplifyNumber = simplifyNumber
+
+

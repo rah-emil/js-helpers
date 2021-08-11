@@ -13,6 +13,15 @@ export const simplifyNumber = function(fractionDigits = 0){
 
 
 /**
+ * Dividing a number into digits.
+ * @returns {string}
+ */
+export const makeDigit = function(){
+    return this.toString().replace(/\B(?=(\d{3})+(?!\d))/g, String.fromCharCode(160))
+}
+
+
+/**
  * Format the number in currency format.
  * @param currency - desired currency symbol
  * @param position - location of the currency symbol

@@ -12,6 +12,32 @@ export const simplifyNumber = function(fractionDigits = 0){
 }
 
 
-export const toPrice = function(){
-    // ...
+/**
+ * Format the number in currency format.
+ * @param currency - desired currency symbol
+ * @param position - location of the currency symbol
+ * @param fractionDigits - number of characters after decimal point
+ * @param withZero - trim trailing zeros or not
+ * @param separator - decimal separator (default is dot)
+ * @returns {string} - monetary number
+ */
+export const toCurrency = function(currency = "$", position = 'after', fractionDigits = 2, withZero = false, separator = '.'){
+    let price = this.toFixed(fractionDigits).toString()
+
+    // Add &nbsp; symbol
+    price = price.replace(/\B(?=(\d{3})+(?!\d))/g, String.fromCharCode(160))
+
+    // Remove latest zeros
+    if(!withZero)
+        price = price.replace(/\.0*$/, '')
+
+    // Separator replacement
+    if(separator !== '.')
+        price = price.replace('.', separator)
+
+    if(position === 'before')
+        return currency + price
+
+    // Default position
+    return price + currency
 }

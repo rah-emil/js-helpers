@@ -23,5 +23,21 @@
         
 
         <script src="js-helpers.js"></script>
+
+        <script>
+            let product = {
+                title: 'iPhone XR',
+                // ...
+                reviews: [
+                    {text: '...', stars: 4.9},
+                    {text: '...', stars: 3.2},
+                    {text: '...', stars: 1},
+                    {text: '...', stars: 5},
+                    {text: '...', stars: 4.5},
+                ]
+            }
+
+            console.log(product.reviews.average('stars'))
+        </script>
     </body>
 </html>

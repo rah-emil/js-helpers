@@ -1,4 +1,10 @@
 /**
+ * @module Math
+ * @description Mathematical operations on numbers
+ */
+
+
+/**
  * Percentage difference between numbers X and Y.
  * For example, income for the current and last month.
  * @param y
@@ -33,4 +39,13 @@ export const minusPercentage = function(percentage){
 export const randomInteger = function(min, max){
 	let rand = min - 0.5 + Math.random() * (max - min + 1)
 	return Math.round(rand)
+}
+
+
+/**
+ * Checking a number for an integer
+ * @returns {boolean}
+ */
+export const isInteger = function() {
+	return this % 1 === 0
 }

@@ -1,4 +1,10 @@
 /**
+ * @module Visual
+ * @description Converting numbers and strings to a specific form
+ */
+
+
+/**
  * Simplify large numbers for readability.
  * For example, to view articles.
  * @param fractionDigits - A number of symbols after comma.

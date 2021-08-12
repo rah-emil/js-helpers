@@ -1,6 +1,6 @@
 {
   "name": "js-helpers",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "js-helpers for quick development",
   "main": "dist/index.js",
   "scripts": {

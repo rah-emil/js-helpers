@@ -1,5 +1,5 @@
 {
-  "name": "js-helpers",
+  "name": "@rah-emil/js-helpers",
   "version": "1.0.0",
   "description": "js-helpers for quick development",
   "main": "dist/index.js",

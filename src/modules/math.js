@@ -22,3 +22,15 @@ export const minusPercentage = function(percentage){
 	let price = this
 	return price - (price * (percentage/100))
 }
+
+
+/**
+ * Random number from MIN to MAX (integer)
+ * @param min - Minimum number
+ * @param max - Maximum number
+ * @returns {number}
+ */
+export const randomInteger = function(min, max){
+	let rand = min - 0.5 + Math.random() * (max - min + 1)
+	return Math.round(rand)
+}

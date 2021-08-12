@@ -1,6 +1,7 @@
 import {
     percentageDifference,
     minusPercentage,
+    randomInteger,
 } from './modules/math'
 
 import {
@@ -14,5 +15,6 @@ Number.prototype.minusPercentage = minusPercentage
 Number.prototype.simplifyNumber = simplifyNumber
 Number.prototype.makeDigit = makeDigit
 Number.prototype.toCurrency = toCurrency
+Math.randomInteger = randomInteger
 
 

@@ -1,8 +1,8 @@
 {
   "name": "@rah-emil/js-helpers",
-  "version": "1.0.0",
-  "description": "js-helpers for quick development",
-  "main": "dist/index.js",
+  "version": "1.0.1",
+  "description": "jsHelpers - it is a JavaScript library that contains all the functions that we constantly write or google.",
+  "main": "dist/js-helpers.js",
   "scripts": {
     "build": "npx mix",
     "watch": "npx mix watch",
@@ -15,7 +15,9 @@
   "keywords": [
     "JavaScript",
     "JS",
-    "helpers"
+    "helpers",
+    "RegExp",
+    "library"
   ],
   "author": "Rah Emil <013131@mail.ru>",
   "license": "MIT",

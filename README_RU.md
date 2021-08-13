@@ -9,12 +9,24 @@ jsHelpers - это JavaScript библиотека, которая содерж�
 ### ES6
 `npm i js-helpers --save`
 ```javascript
-import "js-helpers"
+import "@rah-emil/js-helpers/dist/js-helpers"
+```
+или
+```javascript
+import { simplifyNumber } from "@rah-emil/js-helpers/src/modules/visual"
+
+Number.prototype.simplifyNumber = simplifyNumber
+
+(3568934).simplifyNumber(2) // 3.57M
 ```
 
 ### CDN
 ```html
-<script src=""></script>
+<script src="https://cdn.jsdelivr.net/npm/@rah-emil/js-helpers@1.0.1/dist/js-helpers.js"></script>
+
+<script>
+    (3568934).simplifyNumber(2) // 3.57M
+</script>
 ```
 
 ## Математические функции

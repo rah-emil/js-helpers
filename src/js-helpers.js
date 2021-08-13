@@ -3,6 +3,7 @@ import {
     minusPercentage,
     randomInteger,
     isInteger,
+    nearestDistance,
 } from './modules/math'
 
 import {
@@ -41,6 +42,7 @@ Number.prototype.percentageDifference = percentageDifference
 Number.prototype.minusPercentage = minusPercentage
 Math.randomInteger = randomInteger
 Number.prototype.isInteger = isInteger
+Math.nearestDistance = nearestDistance
 
 
 /**

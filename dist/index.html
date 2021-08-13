@@ -25,19 +25,19 @@
         <script src="js-helpers.js"></script>
 
         <script>
-            let product = {
-                title: 'iPhone XR',
-                // ...
-                reviews: [
-                    {text: '...', stars: 4.9},
-                    {text: '...', stars: 3.2},
-                    {text: '...', stars: 1},
-                    {text: '...', stars: 5},
-                    {text: '...', stars: 4.5},
-                ]
-            }
+            let locations = [
+                {name: "Moscow", coords: [55.79749504565197, 37.5407153847656]},
+                {name: "Voronezh", coords: [51.66109513550912, 39.19964245473753]},
+                {name: "Yaroslavl", coords: [57.62662119485742, 39.89367465100093]},
+                {name: "Rybinsk", coords: [58.04855727216249, 38.85813673976128]},
+                {name: "Ivanovo", coords: [57.00040249293972, 40.973840485275254]},
+                {name: "Kursk", coords: [51.73096145146215, 36.192820361190755]},
+                {name: "Bryansk", coords: [53.243644660620774, 34.36328412094874]},
+            ]
 
-            console.log(product.reviews.average('stars'))
+            let myCoords = [52.7614485, 35.6722916]
+
+            console.log(Math.nearestDistance(locations, myCoords))
         </script>
     </body>
 </html>

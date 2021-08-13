@@ -1,4 +1,4 @@
-# jsHelpers :tw-1f4af:
+# jsHelpers 🚀
 jsHelpers - it is a JavaScript library that contains all the functions that we constantly write or google.
 
 Let's use the jsHelpers library to google less and implement more of the project's functionality.
@@ -22,7 +22,7 @@ Number.prototype.simplifyNumber = simplifyNumber
 
 ### CDN
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@rah-emil/js-helpers@1.0.1/dist/js-helpers.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@rah-emil/js-helpers@1.1.0/dist/js-helpers.js"></script>
 
 <script>
     (3568934).simplifyNumber(2) // 3.57M
@@ -58,6 +58,33 @@ Math.randomInteger(10, 90) // random number from 10 to 90
 #### Integer check
  ```javascript
 (14.7).isInteger() // false
+```
+
+#### The nearest distance
+For example, to find the closest city to a user
+```javascript
+
+let locations = [
+    {name: "Moscow", coords: [55.79749504565197, 37.5407153847656]},
+    {name: "Voronezh", coords: [51.66109513550912, 39.19964245473753]},
+    {name: "Yaroslavl", coords: [57.62662119485742, 39.89367465100093]},
+    {name: "Rybinsk", coords: [58.04855727216249, 38.85813673976128]},
+    {name: "Ivanovo", coords: [57.00040249293972, 40.973840485275254]},
+    {name: "Kursk", coords: [51.73096145146215, 36.192820361190755]},
+    {name: "Bryansk", coords: [53.243644660620774, 34.36328412094874]},
+]
+
+let myCoords = [52.7614485, 35.6722916]
+
+Math.nearestDistance(locations, myCoords)
+
+// {
+//     "name": "Bryansk",
+//     "coords": [
+//         53.243644660620774,
+//         34.36328412094874
+//     ]
+// }
 ```
 
 ## Converting numbers to a specific format

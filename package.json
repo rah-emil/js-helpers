@@ -1,6 +1,6 @@
 {
   "name": "@rah-emil/js-helpers",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "jsHelpers - it is a JavaScript library that contains all the functions that we constantly write or google.",
   "main": "dist/js-helpers.js",
   "scripts": {

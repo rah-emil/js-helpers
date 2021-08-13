@@ -7,7 +7,7 @@ Below are examples and descriptions of all the functions available in jsHelpers.
 
 ## Getting started
 ### ES6
-`npm i js-helpers --save`
+`npm i @rah-emil/js-helpers --save`
 ```javascript
 import "@rah-emil/js-helpers"
 ```

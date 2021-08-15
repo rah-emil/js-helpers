@@ -63,7 +63,7 @@ Array.prototype.deleteItems = deleteItems
 /**
  * @module Obj
  */
-Object.prototype.isEmpty = isEmpty
+window.isEmpty = isEmpty
 Array.prototype.sum = sum
 Array.prototype.average = average
 

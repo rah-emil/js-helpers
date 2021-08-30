@@ -36,6 +36,6 @@ export const average = function(key, fractionDigits = 2){
  * Check object for emptiness
  * @returns {boolean}
  */
-export const isEmpty = function(obj){
-    return Object.keys(obj).length === 0
+export const isNotEmpty = function(){
+    return Object.keys(this).length !== 0
 }

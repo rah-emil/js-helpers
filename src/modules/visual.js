@@ -37,7 +37,7 @@ export const makeDigit = function(){
  * @returns {string} - monetary number
  */
 export const toCurrency = function(currency = "$", position = 'after', fractionDigits = 2, withZero = false, separator = '.'){
-    let price = this.toFixed(fractionDigits).toString()
+    let price = parseFloat(this).toFixed(fractionDigits).toString()
 
     // Add &nbsp; symbol
     price = price.replace(/\B(?=(\d{3})+(?!\d))/g, String.fromCharCode(160))

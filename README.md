@@ -178,7 +178,7 @@ product.reviews.average('stars') // 3.72
 With this check, your code will look more elegant.
  ```javascript
 let user = {}
-isEmpty(user) // true
+user.isNotEmpty() // false
 ```
 
 ## Checking strings (RegExp)

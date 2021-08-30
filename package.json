@@ -1,12 +1,13 @@
 {
   "name": "@rah-emil/js-helpers",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "jsHelpers - it is a JavaScript library that contains all the functions that we constantly write or google.",
   "main": "dist/js-helpers.js",
   "scripts": {
     "build": "npx mix",
     "watch": "npx mix watch",
-    "prod": "npx mix --production"
+    "prod": "npx mix --production",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "browser-sync-webpack-plugin": "^2.3.0",
+    "jest": "^27.1.0",
     "laravel-mix": "^6.0.27"
   }
 }
